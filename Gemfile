@@ -4,7 +4,7 @@ ruby '3.0.4'
 
 ##-- base gems for rails --##
 gem 'rack-cors', require: 'rack/cors'
-gem 'rails', '~>6.1'
+gem 'rails', '~> 6.1', '>= 6.1.7.3'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
@@ -30,7 +30,7 @@ gem 'haikunator'
 # Template parsing safely
 gem 'liquid'
 # Parse Markdown to HTML
-gem 'commonmarker'
+gem 'commonmarker', '>= 0.23.7'
 # Validate Data against JSON Schema
 gem 'json_schemer'
 # Rack middleware for blocking & throttling abusive requests
@@ -56,7 +56,7 @@ gem 'activerecord-import'
 gem 'dotenv-rails'
 gem 'foreman'
 gem 'puma'
-gem 'webpacker', '~> 5.x'
+gem 'webpacker', '~> 5.4', '>= 5.4.3'
 # metrics on heroku
 gem 'barnes'
 
@@ -78,7 +78,7 @@ gem 'wisper', '2.0.0'
 # TODO: bump up gem to 2.0
 gem 'facebook-messenger'
 gem 'line-bot-api'
-gem 'twilio-ruby', '~> 5.66'
+gem 'twilio-ruby', '~> 5.68', '>= 5.68.0'
 # twitty will handle subscription of twitter account events
 # gem 'twitty', git: 'https://github.com/chatwoot/twitty'
 gem 'twitty'
@@ -94,14 +94,14 @@ gem 'ddtrace'
 gem 'elastic-apm'
 gem 'newrelic_rpm'
 gem 'scout_apm'
-gem 'sentry-rails', '~> 5.3'
+gem 'sentry-rails', '~> 5.3', '>= 5.3.1'
 gem 'sentry-ruby', '~> 5.3'
-gem 'sentry-sidekiq', '~> 5.3'
+gem 'sentry-sidekiq', '~> 5.3', '>= 5.3.1'
 
 ##-- background job processing --##
-gem 'sidekiq', '~> 6.4.0'
+gem 'sidekiq', '~> 7.0.0'
 # We want cron jobs
-gem 'sidekiq-cron', '~> 1.3'
+gem 'sidekiq-cron', '~> 1.6', '>= 1.6.0'
 
 ##-- Push notification service --##
 gem 'fcm'
@@ -155,7 +155,7 @@ end
 
 group :test do
   # Cypress in rails.
-  gem 'cypress-on-rails', '~> 1.0'
+  gem 'cypress-on-rails', '~> 1.13', '>= 1.13.1'
   # fast cleaning of database
   gem 'database_cleaner'
   # mock http calls
@@ -175,7 +175,7 @@ group :development, :test do
   gem 'mock_redis'
   gem 'pry-rails'
   gem 'rspec_junit_formatter'
-  gem 'rspec-rails', '~> 5.0.0'
+  gem 'rspec-rails', '~> 5.0.3'
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
