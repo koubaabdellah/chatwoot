@@ -96,12 +96,12 @@ gem 'newrelic_rpm'
 gem 'scout_apm'
 gem 'sentry-rails', '~> 5.3'
 gem 'sentry-ruby', '~> 5.3'
-gem 'sentry-sidekiq', '~> 5.3'
+gem 'sentry-sidekiq', '~> 5.3', '>= 5.3.1'
 
 ##-- background job processing --##
-gem 'sidekiq', '~> 6.4.0'
+gem 'sidekiq', '~> 7.0.8'
 # We want cron jobs
-gem 'sidekiq-cron', '~> 1.3'
+gem 'sidekiq-cron', '~> 1.6', '>= 1.6.0'
 
 ##-- Push notification service --##
 gem 'fcm'
