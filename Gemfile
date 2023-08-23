@@ -4,7 +4,7 @@ ruby '3.0.4'
 
 ##-- base gems for rails --##
 gem 'rack-cors', require: 'rack/cors'
-gem 'rails', '~>6.1'
+gem 'rails', '~> 6.1', '>= 6.1.7.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
@@ -15,12 +15,12 @@ gem 'browser'
 gem 'hashie'
 gem 'jbuilder'
 gem 'kaminari'
-gem 'responders'
+gem 'responders', '>= 3.1.0'
 gem 'rest-client'
 gem 'telephone_number'
 gem 'time_diff'
 gem 'tzinfo-data'
-gem 'valid_email2'
+gem 'valid_email2', '>= 4.0.4'
 # compress javascript config.assets.js_compressor
 gem 'uglifier'
 ##-- used for single column multiple binary flags in notification settings/feature flagging --##
@@ -45,30 +45,30 @@ gem 'google-cloud-storage', require: false
 gem 'image_processing', '~> 1.12.2'
 
 ##-- gems for database --#
-gem 'groupdate'
+gem 'groupdate', '>= 6.2.0'
 gem 'pg'
 gem 'redis'
 gem 'redis-namespace'
 # super fast record imports in bulk
-gem 'activerecord-import'
+gem 'activerecord-import', '>= 1.4.1'
 
 ##--- gems for server & infra configuration ---##
-gem 'dotenv-rails'
+gem 'dotenv-rails', '>= 2.8.0'
 gem 'foreman'
 gem 'puma'
-gem 'webpacker', '~> 5.x'
+gem 'webpacker', '~> 5.4', '>= 5.4.4'
 # metrics on heroku
 gem 'barnes'
 
 ##--- gems for authentication & authorization ---##
-gem 'devise'
+gem 'devise', '>= 4.9.0'
 gem 'devise-secure_password', '~> 2.0', git: 'https://github.com/chatwoot/devise-secure_password'
-gem 'devise_token_auth'
+gem 'devise_token_auth', '>= 1.2.1'
 # authorization
 gem 'jwt'
-gem 'pundit'
+gem 'pundit', '>= 2.3.0'
 # super admin
-gem 'administrate'
+gem 'administrate', '>= 0.18.0'
 
 ##--- gems for pubsub service ---##
 # https://karolgalanciak.com/blog/2019/11/30/from-activerecord-callbacks-to-publish-slash-subscribe-pattern-and-event-driven-design/
@@ -94,7 +94,7 @@ gem 'ddtrace'
 gem 'elastic-apm'
 gem 'newrelic_rpm'
 gem 'scout_apm'
-gem 'sentry-rails', '~> 5.3'
+gem 'sentry-rails', '~> 5.4', '>= 5.4.0'
 gem 'sentry-ruby', '~> 5.3'
 gem 'sentry-sidekiq', '~> 5.3'
 
@@ -114,9 +114,9 @@ gem 'geocoder'
 gem 'maxminddb'
 
 # to create db triggers
-gem 'hairtrigger'
+gem 'hairtrigger', '>= 1.0.0'
 
-gem 'procore-sift'
+gem 'procore-sift', '>= 1.0.0'
 
 # parse email
 gem 'email_reply_trimmer'
@@ -142,7 +142,7 @@ end
 
 group :development do
   gem 'annotate'
-  gem 'bullet'
+  gem 'bullet', '>= 7.0.3'
   gem 'letter_opener'
   gem 'web-console'
 
@@ -157,7 +157,7 @@ group :test do
   # Cypress in rails.
   gem 'cypress-on-rails', '~> 1.0'
   # fast cleaning of database
-  gem 'database_cleaner'
+  gem 'database_cleaner', '>= 2.0.2'
   # mock http calls
   gem 'webmock'
 end
@@ -175,13 +175,13 @@ group :development, :test do
   gem 'mock_redis'
   gem 'pry-rails'
   gem 'rspec_junit_formatter'
-  gem 'rspec-rails', '~> 5.0.0'
+  gem 'rspec-rails', '~> 5.1.0'
   gem 'rubocop', require: false
   gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.16.0', require: false
   gem 'rubocop-rspec', require: false
   gem 'seed_dump'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '>= 5.2.0'
   gem 'simplecov', '0.17.1', require: false
   gem 'spring'
   gem 'spring-watcher-listen'
