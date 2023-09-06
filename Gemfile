@@ -144,7 +144,7 @@ group :development do
   gem 'annotate'
   gem 'bullet'
   gem 'letter_opener'
-  gem 'web-console'
+  gem 'web-console', '>= 4.2.1'
 
   # used in swagger build
   gem 'json_refs'
