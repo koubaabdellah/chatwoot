@@ -51,7 +51,7 @@
     "prosemirror-view": "1.18.4",
     "semver": "7.3.5",
     "spinkit": "~1.2.5",
-    "tailwindcss": "^1.9.6",
+    "tailwindcss": "^2.2.0",
     "turbolinks": "^5.2.0",
     "url-loader": "^2.0.0",
     "v-tooltip": "~2.1.3",
