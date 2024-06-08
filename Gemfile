@@ -120,7 +120,7 @@ gem 'procore-sift'
 
 # parse email
 gem 'email_reply_trimmer'
-gem 'html2text'
+gem 'html2text', '>= 0.4.0'
 
 # to calculate working hours
 gem 'working_hours'
