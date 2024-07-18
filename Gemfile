@@ -41,7 +41,7 @@ gem 'down', '~> 5.0'
 ##-- for active storage --##
 gem 'aws-sdk-s3', require: false
 gem 'azure-storage-blob', require: false
-gem 'google-cloud-storage', require: false
+gem 'google-cloud-storage', '>= 1.43.0', require: false
 gem 'image_processing', '~> 1.12.2'
 
 ##-- gems for database --#
@@ -83,7 +83,7 @@ gem 'twilio-ruby', '~> 5.66'
 # gem 'twitty', git: 'https://github.com/chatwoot/twitty'
 gem 'twitty'
 # facebook client
-gem 'koala'
+gem 'koala', '>= 3.3.0'
 # slack client
 gem 'slack-ruby-client'
 # for dialogflow integrations
@@ -159,7 +159,7 @@ group :test do
   # fast cleaning of database
   gem 'database_cleaner'
   # mock http calls
-  gem 'webmock'
+  gem 'webmock', '>= 3.15.1'
 end
 
 group :development, :test do
@@ -176,10 +176,10 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec_junit_formatter'
   gem 'rspec-rails', '~> 5.0.0'
-  gem 'rubocop', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
-  gem 'rubocop-rspec', require: false
+  gem 'rubocop', '>= 1.32.0', require: false
+  gem 'rubocop-performance', '>= 1.14.3', require: false
+  gem 'rubocop-rails', '>= 2.16.0', require: false
+  gem 'rubocop-rspec', '>= 2.13.0', require: false
   gem 'seed_dump'
   gem 'shoulda-matchers'
   gem 'simplecov', '0.17.1', require: false
