@@ -126,7 +126,7 @@ gem 'html2text'
 gem 'working_hours'
 
 # full text search for articles
-gem 'pg_search'
+gem 'pg_search', '>= 2.3.7'
 
 # Subscriptions, Billing
 gem 'stripe'
