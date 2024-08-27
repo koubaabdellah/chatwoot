@@ -87,7 +87,7 @@ gem 'koala'
 # slack client
 gem 'slack-ruby-client'
 # for dialogflow integrations
-gem 'google-cloud-dialogflow'
+gem 'google-cloud-dialogflow', '>= 1.6.0'
 
 ##-- apm and error monitoring ---#
 gem 'ddtrace'
