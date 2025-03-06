@@ -4,7 +4,7 @@ ruby '3.0.4'
 
 ##-- base gems for rails --##
 gem 'rack-cors', require: 'rack/cors'
-gem 'rails', '~>6.1'
+gem 'rails', '~> 7.0', '>= 7.0.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
@@ -68,7 +68,7 @@ gem 'devise_token_auth'
 gem 'jwt'
 gem 'pundit'
 # super admin
-gem 'administrate'
+gem 'administrate', '>= 0.18.0'
 
 ##--- gems for pubsub service ---##
 # https://karolgalanciak.com/blog/2019/11/30/from-activerecord-callbacks-to-publish-slash-subscribe-pattern-and-event-driven-design/
@@ -99,7 +99,7 @@ gem 'sentry-ruby', '~> 5.3'
 gem 'sentry-sidekiq', '~> 5.3'
 
 ##-- background job processing --##
-gem 'sidekiq', '~> 6.4.0'
+gem 'sidekiq', '~> 8.0.0'
 # We want cron jobs
 gem 'sidekiq-cron', '~> 1.3'
 
@@ -116,7 +116,7 @@ gem 'maxminddb'
 # to create db triggers
 gem 'hairtrigger'
 
-gem 'procore-sift'
+gem 'procore-sift', '>= 1.0.0'
 
 # parse email
 gem 'email_reply_trimmer'
