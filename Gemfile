@@ -45,7 +45,7 @@ gem 'google-cloud-storage', require: false
 gem 'image_processing', '~> 1.12.2'
 
 ##-- gems for database --#
-gem 'groupdate'
+gem 'groupdate', '>= 6.6.0'
 gem 'pg'
 gem 'redis'
 gem 'redis-namespace'
