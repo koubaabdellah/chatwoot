@@ -4,12 +4,12 @@ ruby '3.0.4'
 
 ##-- base gems for rails --##
 gem 'rack-cors', require: 'rack/cors'
-gem 'rails', '~>6.1'
+gem 'rails', '~> 7.1', '>= 7.1.5.2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
 ##-- rails application helper gems --##
-gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on', '>= 10.0.0'
 gem 'attr_extras'
 gem 'browser'
 gem 'hashie'
@@ -50,7 +50,7 @@ gem 'pg'
 gem 'redis'
 gem 'redis-namespace'
 # super fast record imports in bulk
-gem 'activerecord-import'
+gem 'activerecord-import', '>= 1.4.1'
 
 ##--- gems for server & infra configuration ---##
 gem 'dotenv-rails'
@@ -63,12 +63,12 @@ gem 'barnes'
 ##--- gems for authentication & authorization ---##
 gem 'devise'
 gem 'devise-secure_password', '~> 2.0', git: 'https://github.com/chatwoot/devise-secure_password'
-gem 'devise_token_auth'
+gem 'devise_token_auth', '>= 1.2.3'
 # authorization
 gem 'jwt'
 gem 'pundit'
 # super admin
-gem 'administrate'
+gem 'administrate', '>= 0.18.0'
 
 ##--- gems for pubsub service ---##
 # https://karolgalanciak.com/blog/2019/11/30/from-activerecord-callbacks-to-publish-slash-subscribe-pattern-and-event-driven-design/
@@ -114,9 +114,9 @@ gem 'geocoder'
 gem 'maxminddb'
 
 # to create db triggers
-gem 'hairtrigger'
+gem 'hairtrigger', '>= 1.0.0'
 
-gem 'procore-sift'
+gem 'procore-sift', '>= 1.0.0'
 
 # parse email
 gem 'email_reply_trimmer'
@@ -126,7 +126,7 @@ gem 'html2text'
 gem 'working_hours'
 
 # full text search for articles
-gem 'pg_search'
+gem 'pg_search', '>= 2.3.7'
 
 # Subscriptions, Billing
 gem 'stripe'
@@ -157,7 +157,7 @@ group :test do
   # Cypress in rails.
   gem 'cypress-on-rails', '~> 1.0'
   # fast cleaning of database
-  gem 'database_cleaner'
+  gem 'database_cleaner', '>= 2.0.2'
   # mock http calls
   gem 'webmock'
 end
