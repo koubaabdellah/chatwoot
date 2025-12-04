@@ -167,7 +167,7 @@ group :development, :test do
   ##--- gems for debugging and error reporting ---##
   # static analysis
   gem 'brakeman'
-  gem 'bundle-audit', require: false
+  gem 'bundle-audit', '>= 0.2.0', require: false
   gem 'byebug', platform: :mri
   gem 'climate_control'
   gem 'factory_bot_rails'
@@ -180,7 +180,7 @@ group :development, :test do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
-  gem 'seed_dump'
+  gem 'seed_dump', '>= 3.4.0'
   gem 'shoulda-matchers'
   gem 'simplecov', '0.17.1', require: false
   gem 'spring'
