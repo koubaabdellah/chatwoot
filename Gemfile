@@ -39,7 +39,7 @@ gem 'rack-attack'
 gem 'down', '~> 5.0'
 
 ##-- for active storage --##
-gem 'aws-sdk-s3', require: false
+gem 'aws-sdk-s3', '>= 1.208.0', require: false
 gem 'azure-storage-blob', require: false
 gem 'google-cloud-storage', require: false
 gem 'image_processing', '~> 1.12.2'
@@ -76,7 +76,7 @@ gem 'wisper', '2.0.0'
 
 ##--- gems for channels ---##
 # TODO: bump up gem to 2.0
-gem 'facebook-messenger'
+gem 'facebook-messenger', '>= 2.1.2'
 gem 'line-bot-api'
 gem 'twilio-ruby', '~> 5.66'
 # twitty will handle subscription of twitter account events
