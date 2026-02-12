@@ -41,7 +41,7 @@ gem 'down', '~> 5.0'
 ##-- for active storage --##
 gem 'aws-sdk-s3', require: false
 gem 'azure-storage-blob', require: false
-gem 'google-cloud-storage', require: false
+gem 'google-cloud-storage', '>= 1.43.0', require: false
 gem 'image_processing', '~> 1.12.2'
 
 ##-- gems for database --#
@@ -78,16 +78,16 @@ gem 'wisper', '2.0.0'
 # TODO: bump up gem to 2.0
 gem 'facebook-messenger'
 gem 'line-bot-api'
-gem 'twilio-ruby', '~> 5.66'
+gem 'twilio-ruby', '~> 5.69', '>= 5.69.0'
 # twitty will handle subscription of twitter account events
 # gem 'twitty', git: 'https://github.com/chatwoot/twitty'
 gem 'twitty'
 # facebook client
-gem 'koala'
+gem 'koala', '>= 3.3.0'
 # slack client
-gem 'slack-ruby-client'
+gem 'slack-ruby-client', '>= 1.1.0'
 # for dialogflow integrations
-gem 'google-cloud-dialogflow'
+gem 'google-cloud-dialogflow', '>= 1.6.0'
 
 ##-- apm and error monitoring ---#
 gem 'ddtrace'
@@ -104,7 +104,7 @@ gem 'sidekiq', '~> 6.4.0'
 gem 'sidekiq-cron', '~> 1.3'
 
 ##-- Push notification service --##
-gem 'fcm'
+gem 'fcm', '>= 2.0.0'
 gem 'webpush'
 
 ##-- geocoding / parse location from ip --##
